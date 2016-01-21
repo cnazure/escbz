@@ -1,0 +1,708 @@
+/*---全局公共样式---- */
+html, body {
+	width:100%;
+	height:100%;
+}
+*{	margin:0;
+	padding:0;
+}
+body {
+	margin:0;
+	padding:0;
+	font-size:12px;
+	font-family:Arial,"宋体";
+	color:#666;
+}
+div, form, input, img, ul, li, dl, dt, dd, p {
+	margin: 0;
+	padding: 0;
+}
+.chkbox, .checkbox, .radio, button, input, select, textarea {
+	vertical-align: middle;
+	font-size:12px;
+}
+hr {
+	height:0px;
+	border:0px;
+	border-bottom:1px solid #E7F0F5;
+}
+img {
+	border:0px;
+	vertical-align: middle;
+}
+li, dl {
+	list-style-type:none;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin:0;
+	padding:0;
+	font-size:12px;
+	font-weight:normal;
+}
+/*----清除浮动-------------------- */
+.clear {
+	clear: both;
+	font-size:1px;
+	width:1px;
+	height:0;
+	visibility: hidden;
+}
+/*-------间距---------------------------- */
+.mg_lrtb {
+	margin:10px;
+}
+.mg_left {
+	margin-left:3px;
+}
+.mg_right {
+	margin-right:3px;
+}
+.mg_top {
+	margin-top:3px;
+}
+.mg_bottom {
+	margin-bottom:3px;
+}
+.pg_lrtb {
+	padding:10px;
+}
+.pg_left {
+	padding-left:3px;
+}
+.pg_right {
+	padding-right:3px;
+}
+.pg_top {
+	padding-top:3px;
+}
+.pg_bottom {
+	padding-bottom:3px;
+}
+/*--------------------- 默认全局样式超链接样式 --------------------- */
+a {
+	text-decoration:none;
+	color: #666;
+}
+a:hover {
+	color:red;
+}
+.table_1 .odd td {
+	background:#fff;
+}
+.table_1 .even td {
+	background:#f8f8f8;
+}
+.table_1 .td_hover td {
+	color:#cc6633;
+	background-color:#fff6f4;
+	cursor:default;
+}
+/*----删除操作样式------------ */
+.searchcont h4.font_16 {
+	padding-bottom:4px;
+	color:#333;
+	font-size:16px;
+	font-weight:bold;
+	border-bottom:1px solid #ddd;
+}
+.searchcont p.text_p {
+	color:#999;
+}
+/*--------边框表格全局-------------- */
+.br_se {
+	border:1px solid #ccc;
+	padding:10px;
+}
+/*---------表格样式------------------------------ */
+.table_1 {
+	padding:2px;
+	line-height:18px;
+	border-collapse:collapse;
+}
+.table_1 th {
+	padding:3px;
+	text-align:center;
+	border:1px solid #ccc;
+	background:#f3f3f3 url(../images/biaoge_title_bg_x.gif) bottom repeat-x;
+	font:bold 12px/20px Arial,"宋体";
+}
+.table_1 td {
+	padding:5px;
+	border:1px solid #ccc;
+	text-align:center;
+	font-family:"宋体";
+}
+.table_1 td a {
+ color:#;
+}
+.table_1 td a:hover {
+ color:#;
+}
+/*------------------标题当前位置------------- */
+.right_bg_title {
+	padding:10px;
+	height:20px;
+	background:url(../images/tittlebg.gif) top repeat-x;
+	overflow:hidden;
+	zoom:1;
+}
+.weizi {
+	float:left;
+	color:#333;
+}
+.weizi strong.bg {
+	padding-left:20px;
+	background:url(../images/tb.gif) left center no-repeat;
+}
+.weizi span {
+	margin:3px;
+}
+.weizi span.ce1 {
+	color:#666;
+}
+.weizi span.ce2 {
+	color:#999;
+}
+.fanhui {
+	float:right;
+}
+.fanhui a {
+	color:#ecaa3c;
+	font-size:14px;
+	font-weight:bold;
+}
+.fanhui a:hover {
+	text-decoration:underline;
+}
+/*--------------页码*/
+.anpager {
+	margin:10px 5px;
+	padding:4px;
+	text-align:right;
+	overflow:hidden;
+	zoom:1;
+}
+.paginator a {
+	padding:0 4px;
+	height:20px;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #f2f2f2;
+	color: #990000;
+	line-height:20px;
+	border: 1px solid #e5e5e5;
+	display:inline-block;
+}
+.paginator a:visited {
+	padding: 1px 5px;
+	border: solid 1px #ddd;
+	background: #fff;
+	text-decoration: none;
+}
+.paginator .cpb {
+	padding: 1px 6px;
+	font-weight: bold;
+	font-size: 13px;
+	border: none;
+}
+.paginator a:hover {
+	background: #990000;
+	border: 1px solid #990000;
+	color: #FFFFFF;
+}
+/*页码--------*/
+
+
+/*----------操作图片_按钮--------*/
+.chakan_btn,.cakan_btn:hover,.bianji_btn,.bianji_btn:hover,.shanchu_btn, .shanchu_btn:hover, .shangyi_btn,
+.xiayi_btn,.edit_roles,.edit_roles:hover,.assign_permissions,.assign_permissions:hover,.zcztai_btn,.zcztai_btn:hover,
+.gqztai_btn,.gqztai_btn:hover,.yulan_btn,.yulan_btn:hover,.all_outbound,.all_outbound:hover,.part_outbound,.part_outbound:hover,
+.qixiao-didan,.qixiao-didan:hover,.tel-okey,.tel-okey:hover,.dayin-btn,.dayin-btn:hover,.pass_btn,.pass_btn:hover,
+.nopass_btn,.nopass_btn:hover,.ystg_btn,.ystg_btn:hover,.no-ystg_btn,.no-ystg_btn:hover,.btn_close,.btn_close:hover,
+.deal-ok_btn,.deal-ok_btn:hover,.deal-out_btn,.deal-out_btn:hover,.yushen-btn,.yushen-btn:hover,.fsxx-btn,.fsxx-btn:hover,.genjin-btn,.genjin-btn:hover,
+.yaoyueon_btn,.yaoyueon_btn:hover,.yaoyueok_btn,.yaoyueok_btn:hover,.qkgc_btn,.qkgc_btn:hover,.dkch_btn,.dkch_btn:hover,.ddtc_btn,.ddtc_btn:hover,
+.zwgm_btn,.zwgm_btn:hover,.ddhf_btn,.ddhf_btn:hover,.hfjl_btn,.hfjl_btn:hover,.sj_btn,.sj_btn:hover,.xj_btn,.xj_btn:hover,.yyue_btn,.yyue_btn:hover,
+.crtk_btn,.crtk_btn:hover,.jjtk_btn,.jjtk_btn:hover,.beizhu_btn,.beizhu_btn:hover
+{
+	width:70px;
+	height:24px;
+	background:url(../images/caozuo_btn.png) no-repeat;
+	cursor:pointer;
+	border:none;
+	display:inline-block;
+	_display:block;
+    text-indent:-9999px;
+	overflow:hidden;
+	zoom:1;
+    vertical-align:middle;
+}
+
+.chakan_btn {
+	width:89px;
+	background-position:0 -89px;	/*查看内容----------*/
+} 
+.chakan_btn:hover {
+	background-position:-101px -89px;
+}
+.bianji_btn {
+	background-position:0 -30px;	/*编辑----------*/
+}
+.bianji_btn:hover {
+	background-position:-101px -30px;
+}
+.shanchu_btn {
+	background-position:0 -59px;	/*删除----------*/
+}
+.shanchu_btn:hover {
+	background-position:-101px -59px;
+}
+.shangyi_btn {
+	background-position:0 -118px;	/*上移----------*/
+}
+.xiayi_btn {
+	background-position:0 -148px;	/*下移----------*/
+}
+
+.edit_roles{
+	width:89px;
+	background-position:0 -178px;  /*分配权限----------*/
+	}
+.edit_roles:hover{
+	width:89px;
+	background-position:-101px -178px;
+	}
+.assign_permissions{
+	width:89px;
+	background-position:0 -206px;  /*编辑角色----------*/
+	}
+.assign_permissions:hover{
+	width:89px;
+	background-position:-101px -206px;
+	}
+
+
+.zcztai_btn{          /*正常状态----------*/
+	width:89px;
+	background-position:0 -236px;
+	}
+.zcztai_btn:hover{
+	width:89px;
+	background-position:-101px -236px;
+	}
+
+.gqztai_btn{          /*挂起状态----------*/
+	width:89px;
+	background-position:0 -265px;
+	}
+.gqztai_btn:hover{
+	width:89px;
+	background-position:-101px -265px;
+	}
+.yulan_btn{                /*预览----------*/
+	background-position:0 -294px;
+	}
+.yulan_btn:hover{
+	background-position:0 -294px;
+	}
+
+
+.all_outbound{                /*全部出库----------*/
+	width:89px;
+	background-position:0 -323px;
+	}
+.all_outbound:hover{
+	width:89px;
+	background-position:-101px -323px;
+	}
+.part_outbound{                /*部分出库----------*/
+	width:89px;
+	background-position:0 -352px;
+	}
+.part_outbound:hover{
+	width:89px;
+	background-position:-101px -352px;
+	}
+.qixiao-didan{                /*取消订单----------*/
+	width:89px;
+	background-position:0 -382px;
+	}
+.qixiao-didan:hover{
+	width:89px;
+	background-position:-101px -382px;
+	}
+.tel-okey{                /*电话确认----------*/
+	width:89px;
+	background-position:0 -412px;
+	}
+.tel-okey:hover{
+	width:89px;
+	background-position:-101px -412px;
+	}
+.dayin-btn{                /*打印----------*/
+	background-position:0 -442px;
+	}
+.dayin-btn:hover{
+	background-position:-101px -442px;
+	}
+.pass_btn{                /*审核通过----------*/
+	background-position:0 -472px;
+	}
+.pass_btn:hover{                
+	background-position:-101px -472px;
+	}
+.nopass_btn{                /*审核不通过----------*/
+	background-position:0 -502px;
+	}
+.nopass_btn:hover{                
+	background-position:-101px -502px;
+	}
+
+.ystg_btn{					 /*预审通过----------*/
+	background-position:0 -532px;
+	}
+.ystg_btn:hover{					 /*预审通过----------*/
+	background-position:-101px -532px;
+	}
+
+.no-ystg_btn{					 /*预审不通过----------*/
+	background-position:0 -562px;
+	}
+.no-ystg_btn:hover{					 /*预审不通过----------*/
+	background-position:-101px -562px;
+	}
+	
+.btn_close{						 /*关闭----------*/
+	background-position:0 -591px;
+	}
+.btn_close:hover{					
+	background-position:-101px -591px;
+	}
+
+.deal-ok_btn{                /*交易完成----------*/
+	background-position:0 -622px;
+	}
+.deal-ok_btn:hover{
+	background-position:-101px -622px;
+	}
+	
+.deal-out_btn{                /*交易取消----------*/
+	background-position:0 -652px;
+	}
+.deal-out_btn:hover{
+	background-position:-101px -652px;
+	}
+
+
+.yushen-btn{			/*预审----------*/
+	background-position:0 -682px;
+	}	
+.yushen-btn:hover{		
+	background-position:-101px -682px;
+	}				 
+
+.fsxx-btn{				/*发送短信----------*/
+	background-position:0 -712px;
+	}	
+.fsxx-btn:hover{		
+	background-position:-101px -712px;
+	}				 
+				
+.genjin-btn{			/*跟进----------*/
+	background-position:0 -742px;
+	}			 
+.genjin-btn:hover{		
+	background-position:-101px -742px;
+	}				 
+				
+.yaoyueon_btn{          /*邀约失败----------*/
+	width:89px;
+	background-position:0 -773px;
+	}
+.yaoyueon_btn:hover{
+	width:89px;
+	background-position:-101px -773px;
+	}
+	
+.yaoyueok_btn{          /*邀约成功----------*/
+	width:89px;
+	background-position:0 -803px;
+	}
+.yaoyueok_btn:hover{
+	width:89px;
+	background-position:-101px -803px;
+	}
+	
+.qkgc_btn{          /*全款购车----------*/
+	width:89px;
+	background-position:0 -834px;
+	}
+.qkgc_btn:hover{
+	width:89px;
+	background-position:-101px -834px;
+	}
+	
+.dkch_btn{          /*贷款审核--------*/
+	width:89px;
+	background-position:0 -864px;
+	}
+.dkch_btn:hover{
+	width:89px;
+	background-position:-101px -864px;
+	}
+.ddtc_btn{          /*等待提车----------*/
+	width:89px;
+	background-position:0 -895px;
+	}
+.ddtc_btn:hover{
+	width:89px;
+	background-position:-101px -895px;
+	}
+.zwgm_btn{          /*暂未购买----------*/
+	width:89px;
+	background-position:0 -927px;
+	}
+.zwgm_btn:hover{
+	width:89px;
+	background-position:-101px -927px;
+	}
+.ddhf_btn{          /*订单回访----------*/
+	width:89px;
+	background-position:0 -960px;
+	}
+.ddhf_btn:hover{
+	width:89px;
+	background-position:-101px -960px;
+	}
+.hfjl_btn{          /*回访记录----------*/
+	width:89px;
+	background-position:0 -992px;
+	}
+.hfjl_btn:hover{
+	width:89px;
+	background-position:-101px -992px;
+	}
+
+.sj_btn{			 /*上架----------*/
+	background-position:0 -1025px;
+	}
+	
+.sj_btn:hover{			 
+	background-position:-101px -1025px;
+	}
+ 
+
+.xj_btn{			 /*下架----------*/
+	background-position:0 -1056px;
+	}
+.xj_btn:hover{			 
+	background-position:-101px -1056px;
+	}
+ 
+.yyue_btn{			 /*预约----------*/
+	background-position:0 -1089px;
+	}
+.yyue_btn:hover{			 
+	background-position:-101px -1089px;
+	}
+
+.crtk_btn{			 /*确认退款----------*/
+	width:89px;
+	background-position:0 -1151px;
+	}
+.crtk_btn:hover{
+	width:89px;
+	background-position:-101px -1151px;
+	}
+.jjtk_btn{			 /*拒绝退款----------*/
+	width:89px;
+	background-position:0 -1121px;
+	}
+.jjtk_btn:hover{	
+	width:89px;
+	background-position:-101px -1121px;
+	}
+
+.beizhu_btn{			 /*备注----------*/
+	background-position:0 -1181px;
+	}
+.beizhu_btn:hover{			 
+	background-position:-101px -1181px;
+	}
+
+
+/*-----------------表格*/
+.table_list_tb{ padding:0px; border-collapse:collapse; background-color:#fff; border:solid 1px #def;}
+.table_list_tb th{height:30px; line-height:30px; font-size:12px; color:#fff; background-color:#5599dd; border:#5588cc solid 1px;  border-top:#5599dd solid 1px;}
+.table_list_tb td{ padding:5px 10px; height:20px; line-height:20px; text-align:center; color:#666; border:solid 1px #def;}
+.table_list_tb td a{ color:#39F;}
+.table_list_tb td a:visited{ color:#800080;}
+.table_list_tb td p{ margin-bottom:5px; padding:0 10px; line-height:18px;}
+.table_list_tb td .txt{ text-align:left;}
+.table_list_tb td .txt span{ display:inline-block; margin-right:3px; width:20px; height:20px; vertical-align:middle;}
+.table_list_tb td .txt a{vertical-align:middle;}
+.table_list_tb td .qf{ text-align:left; color:#888;}
+.table_list_tb td .bz{ text-align:left;}
+.table_list_tb td .bz span{ display:inline-block; margin-right:3px; width:20px; height:20px; vertical-align:middle;}
+
+.table_list_tb .odd td{ background:#fff;}
+.table_list_tb .even td{ background:#eef8ff;}
+.table_list_tb .td_hover td{ color:#cc6633; background-color:#fff9ee;  border-right:#ffe8cc solid 1px; cursor:default;}
+
+
+table tr.tr_1{background:#fff2f2;	} /*--淡红色--*/
+table tr.tr_2{background:#f3faff;	} /*--淡蓝色--*/
+table tr.tr_3{background:#fcfff6;	} /*--淡绿色--*/
+table tr.tr_4{background:#f2f2f2;	} /*--淡灰色--*/
+.table_hover tr:hover{background:#fff9ee;}
+
+/*商品详情页面*//*保障*/
+.ic_cs,/*超时赔付*/
+.ic_wh,/*无货赔付*/
+.ic_ss,/*描述属实*/
+.ic_aq,/*安全保障*/
+.ic_tg,/*身份认证*/
+.ic_gr,/*绿色购物*/
+.ic_eid/*安全认证*/
+{ background-image:url("../images/iconbg_v1.png");  background-repeat:no-repeat; }
+
+.ic_cs  {background-position:0px -433px;}
+.ic_wh  {background-position:0px -257px;}
+.ic_ss  {background-position:0px -335px;}
+.ic_aq  {background-position:0px -309px;}
+.ic_tg  {background-position:0px -281px;}
+.ic_gr  {background-position:0px -802px;}
+.ic_eid {background-position:0px -924px;}
+
+
+/*商品详情页面*//*交易类型*/
+.ic_js,/*寄售交易*/
+.ic_zh,/*卖家直冲*/
+.ic_db,/*担保交易*/
+.ic_dk,/*点卡交易*/
+.ic_hz,/*官方*/
+.ic_dl,/*游戏代练*/
+.ic_qg,/*代练求购*/
+.ic_kc,/*卖家快充*/
+.ic_km,/*自动卡密*/
+.ic_zc,/*卖家直充*/
+.ic_mc /*卖家慢充*/
+{background-image:url("../images/iconbg_v1.png");background-repeat:no-repeat;}
+
+.ic_js {background-position:0px 3px;}
+.ic_zh {background-position:0px -49px;}
+.ic_db {background-position:0px -23px;}
+.ic_dk {background-position:0px -75px;}
+.ic_hz {background-position:0px -536px;}
+.ic_dl {background-position:0px -101px;}
+.ic_qg {background-position:0px -127px;}
+.ic_kc {background-position:0px -153px;}
+.ic_km {background-position:0px -179px;}
+.ic_zc {background-position:0px -205px;}
+.ic_mc {background-position:2px -231px;}
+
+
+.table_list_lf{ width:100%; border-collapse:collapse; background-color:#fff; border:solid 1px #def;}
+.table_list_lf th{ padding:0 10px; width:180px; height:30px; line-height:30px; text-align:right; font-size:12px;  background-color:#eee; border:solid 1px #ccc; }
+.table_list_lf td{ padding:5px 10px; text-align:left; color:#666; border:solid 1px #ccc; width:auto;}
+.table_list_lf td a{ color:#39F;}
+.table_list_lf input{ margin-right:3px; vertical-align:middle;}
+.table_list_lf .odd { background:#fff;}
+.table_list_lf .even { background:#eef8ff;}
+
+
+.table_list_lf2{border-collapse:collapse; background-color:#fff; border:solid 6px #66aaee;}
+.table_list_lf2 th{ padding:5px 8px; width:260px; height:22px; line-height:22px; text-align:right; vertical-align:top; font-size:12px; background-color:#def;}
+.table_list_lf2 td{ padding:5px 8px; height:22px; line-height:22px; text-align:left; color:#666;}
+.table_list_lf2 td a{ color:#39F;}
+.table_list_lf2 input{ margin-right:3px; vertical-align:middle;}
+.table_list_lf2 .odd { background:#fff;}
+.table_list_lf2 .even { background:#eef8ff;}
+.table_list_lf2 .even th { background:#cce8ff;}
+
+.table_list_lf_3{ border:solid 1px #def;border-collapse:collapse; text-align:center; line-height:30px;}
+.table_list_lf_3 th{
+	background:#99ccff;
+	border:1px solid #def;
+	 color:#fff;
+	}
+.table_list_lf_3 td{
+	background:#fefefe;
+	border:1px solid #def;
+	}
+
+
+.table_list_lr{ margin-bottom:10px; border-collapse:collapse; background:#66aaee;}
+
+
+.table_2box{ margin-bottom:10px; padding:1px; width:100%; border-collapse:collapse; background-color:#fff; border:solid 1px #bdf;}
+.table_2box th{ padding:0 15px; height:30px; line-height:30px; text-align:left; font-size:12px; background-color:#def; border:solid 1px #def; border-bottom:solid 1px #bdf;}
+.table_2box td{ line-height:25px; text-align:left; color:#666; border:solid 1px #def;}
+.table_2box td .zhecont{ position:relative; padding:10px 15px; height:100px; overflow:hidden;}
+.table_2box td .zhecont p{ position:relative; z-index:2;}
+.table_2box td .zheceng{ position:absolute; top:0px; left:0px; width:100%; _width:2000px; height:120px; background-color:#bdf;
+ filter:Alpha(opacity=30); /* IE */    
+ -moz-opacity:0.3;    /* FF 主要是为了兼容老版本的FF */
+ opacity:0.3;    /* FF */
+ z-index:555;}
+.table_2box td .edtceng{ position:absolute; top:0px; left:0px; width:100%; _width:2000px; height:120px; background:#fff8ee; z-index:0; }
+
+
+
+.table_2box td a{ color:#39F;}
+.table_2box td p{ margin-bottom:8px;}
+.table_2box td textarea{ padding:5px; max-width:90%; width:90%; height:60px; border:#ddd solid 1px;}
+.table_2box td p.edit_color input{ margin:0 5px; vertical-align:middle;}
+
+a.color_red:hover,a.color_blk:hover,a.color_blk_9:hover,a.color_org:hover,a.color_gre:hover,a.color_blu:hover,a.color_pur:hover
+{
+	 text-decoration:underline;
+}
+a.color_red,.color_red{ color:#f00;}/*红色*/
+a.color_blk,.color_blk{ color:#000;}/*黑色*/
+a.color_blk_9,.color_blk_9{ color:#999;}/*灰色*/
+span.color_blk_9 a{ color:#999;}
+a.color_org,.color_org{ color:#f80;}/*橙色*/
+a.color_gre,.color_gre{ color:#390;}/*绿色*/
+a.color_blu,.color_blu{ color:#06c;}/*蓝色*/
+a.color_pur,.color_pur{ color:#606;}/*紫色*/
+ 
+
+ 
+
+.brn{ border-right:none;}
+
+.mt{ margin-top:8px;}
+.mb{ margin-bottom:8px;}
+.mr{ margin-right:8px; _display:inline;}
+.ml{ margin-left:8px;}
+
+
+/*-----------------表格*/
+
+a.game_check{
+	margin-right:15px;
+	height:26px;
+	padding-left:12px;
+	display:inline-block;
+	background:url(../images/game_check_btn.png) left top no-repeat;
+	font:normal 12px/26px Arial,"宋体";
+	}
+a.game_check span{
+	height:26px;
+	margin-right:-8px;
+	padding-right:28px;
+	display:inline-block;
+	background:url(../images/game_check_btn.png) right top no-repeat;
+	position:relative;
+	cursor:pointer;
+	}
+a.game_check:hover{
+	color:#f60;
+	background:url(../images/game_check_btn.png) left bottom no-repeat;
+	}
+a.game_check:hover span{
+	background:url(../images/game_check_btn.png) right bottom no-repeat;
+	}
+
+
+		

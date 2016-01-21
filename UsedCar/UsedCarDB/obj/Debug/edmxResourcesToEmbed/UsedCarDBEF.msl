@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UsedCarDBModelStoreContainer" CdmEntityContainer="UsedCarDBEntities">
+    <EntitySetMapping Name="Admin_PopedomInfo">
+      <EntityTypeMapping TypeName="UsedCarDBModel.Admin_PopedomInfo">
+        <MappingFragment StoreEntitySet="Admin_PopedomInfo">
+          <ScalarProperty Name="ParentType" ColumnName="ParentType" />
+          <ScalarProperty Name="sortId" ColumnName="sortId" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="PopedomName" ColumnName="PopedomName" />
+          <ScalarProperty Name="PopedomId" ColumnName="PopedomId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Admin_RoleInfo">
+      <EntityTypeMapping TypeName="UsedCarDBModel.Admin_RoleInfo">
+        <MappingFragment StoreEntitySet="Admin_RoleInfo">
+          <ScalarProperty Name="RoleCreateTime" ColumnName="RoleCreateTime" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Admin_RolePoperdomInfo">
+      <EntityTypeMapping TypeName="UsedCarDBModel.Admin_RolePoperdomInfo">
+        <MappingFragment StoreEntitySet="Admin_RolePoperdomInfo">
+          <ScalarProperty Name="PopedomId" ColumnName="PopedomId" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="RolePoerdomID" ColumnName="RolePoerdomID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Admin_UserInfo">
+      <EntityTypeMapping TypeName="UsedCarDBModel.Admin_UserInfo">
+        <MappingFragment StoreEntitySet="Admin_UserInfo">
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="TrueName" ColumnName="TrueName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="UserPass" ColumnName="UserPass" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Admin_UserInfoRole">
+      <EntityTypeMapping TypeName="UsedCarDBModel.Admin_UserInfoRole">
+        <MappingFragment StoreEntitySet="Admin_UserInfoRole">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserRoleId" ColumnName="UserRoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Agents">
+      <EntityTypeMapping TypeName="UsedCarDBModel.T_Agents">
+        <MappingFragment StoreEntitySet="T_Agents">
+          <ScalarProperty Name="isUsing" ColumnName="isUsing" />
+          <ScalarProperty Name="AddUser" ColumnName="AddUser" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="ATel" ColumnName="ATel" />
+          <ScalarProperty Name="AName" ColumnName="AName" />
+          <ScalarProperty Name="Aid" ColumnName="Aid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_CAR_BRAND">
+      <EntityTypeMapping TypeName="UsedCarDBModel.T_CAR_BRAND">
+        <MappingFragment StoreEntitySet="T_CAR_BRAND">
+          <ScalarProperty Name="firstPY" ColumnName="firstPY" />
+          <ScalarProperty Name="isValid" ColumnName="isValid" />
+          <ScalarProperty Name="iconImg" ColumnName="iconImg" />
+          <ScalarProperty Name="operateUser" ColumnName="operateUser" />
+          <ScalarProperty Name="createDate" ColumnName="createDate" />
+          <ScalarProperty Name="brandName" ColumnName="brandName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_CarInfo">
+      <EntityTypeMapping TypeName="UsedCarDBModel.T_CarInfo">
+        <MappingFragment StoreEntitySet="T_CarInfo">
+          <ScalarProperty Name="isUsing" ColumnName="isUsing" />
+          <ScalarProperty Name="AddUser" ColumnName="AddUser" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="ImgUrl" ColumnName="ImgUrl" />
+          <ScalarProperty Name="ImgType" ColumnName="ImgType" />
+          <ScalarProperty Name="FirstOnCard" ColumnName="FirstOnCard" />
+          <ScalarProperty Name="CarModel" ColumnName="CarModel" />
+          <ScalarProperty Name="CarVIN" ColumnName="CarVIN" />
+          <ScalarProperty Name="CarId" ColumnName="CarId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_CarInfo_Log">
+      <EntityTypeMapping TypeName="UsedCarDBModel.T_CarInfo_Log">
+        <MappingFragment StoreEntitySet="T_CarInfo_Log">
+          <ScalarProperty Name="EditDate" ColumnName="EditDate" />
+          <ScalarProperty Name="EditUser" ColumnName="EditUser" />
+          <ScalarProperty Name="statusRemark" ColumnName="statusRemark" />
+          <ScalarProperty Name="processStatus" ColumnName="processStatus" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="CarId" ColumnName="CarId" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_city">
+      <EntityTypeMapping TypeName="UsedCarDBModel.T_city">
+        <MappingFragment StoreEntitySet="T_city">
+          <ScalarProperty Name="fatherID" ColumnName="fatherID" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="cityID" ColumnName="cityID" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Customer">
+      <EntityTypeMapping TypeName="UsedCarDBModel.T_Customer">
+        <MappingFragment StoreEntitySet="T_Customer">
+          <ScalarProperty Name="isUsing" ColumnName="isUsing" />
+          <ScalarProperty Name="AddUser" ColumnName="AddUser" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="BelongUser" ColumnName="BelongUser" />
+          <ScalarProperty Name="CAddress" ColumnName="CAddress" />
+          <ScalarProperty Name="CTel" ColumnName="CTel" />
+          <ScalarProperty Name="Contacts" ColumnName="Contacts" />
+          <ScalarProperty Name="CName" ColumnName="CName" />
+          <ScalarProperty Name="CId" ColumnName="CId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_province">
+      <EntityTypeMapping TypeName="UsedCarDBModel.T_province">
+        <MappingFragment StoreEntitySet="T_province">
+          <ScalarProperty Name="province" ColumnName="province" />
+          <ScalarProperty Name="provinceID" ColumnName="provinceID" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_SEND">
+      <EntityTypeMapping TypeName="UsedCarDBModel.T_SEND">
+        <MappingFragment StoreEntitySet="T_SEND">
+          <ScalarProperty Name="SendKey" ColumnName="SendKey" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="SendFunction" ColumnName="SendFunction" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EquipContent" ColumnName="EquipContent" />
+          <ScalarProperty Name="SendCode" ColumnName="SendCode" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="SendType" ColumnName="SendType" />
+          <ScalarProperty Name="SendNum" ColumnName="SendNum" />
+          <ScalarProperty Name="SendID" ColumnName="SendID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_CarOrder">
+      <EntityTypeMapping TypeName="UsedCarDBModel.T_CarOrder">
+        <MappingFragment StoreEntitySet="T_CarOrder">
+          <ScalarProperty Name="CarVIN" ColumnName="CarVIN" />
+          <ScalarProperty Name="AddUser" ColumnName="AddUser" />
+          <ScalarProperty Name="Sales" ColumnName="Sales" />
+          <ScalarProperty Name="YDDate" ColumnName="YDDate" />
+          <ScalarProperty Name="LXRDH" ColumnName="LXRDH" />
+          <ScalarProperty Name="LXR" ColumnName="LXR" />
+          <ScalarProperty Name="TCDD" ColumnName="TCDD" />
+          <ScalarProperty Name="XSFDC" ColumnName="XSFDC" />
+          <ScalarProperty Name="XCPHM" ColumnName="XCPHM" />
+          <ScalarProperty Name="XCZDH" ColumnName="XCZDH" />
+          <ScalarProperty Name="XCZXM" ColumnName="XCZXM" />
+          <ScalarProperty Name="XHJD" ColumnName="XHJD" />
+          <ScalarProperty Name="YSFDC" ColumnName="YSFDC" />
+          <ScalarProperty Name="YCPHM" ColumnName="YCPHM" />
+          <ScalarProperty Name="YCZDH" ColumnName="YCZDH" />
+          <ScalarProperty Name="YCZXM" ColumnName="YCZXM" />
+          <ScalarProperty Name="YHJD" ColumnName="YHJD" />
+          <ScalarProperty Name="DJDate" ColumnName="DJDate" />
+          <ScalarProperty Name="SHType" ColumnName="SHType" />
+          <ScalarProperty Name="CarId" ColumnName="CarId" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="OrderProcessStatus" ColumnName="OrderProcessStatus" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+          <ScalarProperty Name="OrderAdddate" ColumnName="OrderAdddate" />
+          <ScalarProperty Name="OrderType" ColumnName="OrderType" />
+          <ScalarProperty Name="KPPrice" ColumnName="KPPrice" />
+          <ScalarProperty Name="CertTypeOther" ColumnName="CertTypeOther" />
+          <ScalarProperty Name="CertType" ColumnName="CertType" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_OrderInfo">
+      <EntityTypeMapping TypeName="UsedCarDBModel.View_OrderInfo">
+        <MappingFragment StoreEntitySet="View_OrderInfo">
+          <ScalarProperty Name="ImgUrl" ColumnName="ImgUrl" />
+          <ScalarProperty Name="AddUser" ColumnName="AddUser" />
+          <ScalarProperty Name="Sales" ColumnName="Sales" />
+          <ScalarProperty Name="YDDate" ColumnName="YDDate" />
+          <ScalarProperty Name="LXRDH" ColumnName="LXRDH" />
+          <ScalarProperty Name="LXR" ColumnName="LXR" />
+          <ScalarProperty Name="TCDD" ColumnName="TCDD" />
+          <ScalarProperty Name="XSFDC" ColumnName="XSFDC" />
+          <ScalarProperty Name="XCPHM" ColumnName="XCPHM" />
+          <ScalarProperty Name="XCZDH" ColumnName="XCZDH" />
+          <ScalarProperty Name="XCZXM" ColumnName="XCZXM" />
+          <ScalarProperty Name="XHJD" ColumnName="XHJD" />
+          <ScalarProperty Name="YSFDC" ColumnName="YSFDC" />
+          <ScalarProperty Name="YCPHM" ColumnName="YCPHM" />
+          <ScalarProperty Name="YCZDH" ColumnName="YCZDH" />
+          <ScalarProperty Name="YCZXM" ColumnName="YCZXM" />
+          <ScalarProperty Name="YHJD" ColumnName="YHJD" />
+          <ScalarProperty Name="DJDate" ColumnName="DJDate" />
+          <ScalarProperty Name="SHType" ColumnName="SHType" />
+          <ScalarProperty Name="CarVIN" ColumnName="CarVIN" />
+          <ScalarProperty Name="CarId" ColumnName="CarId" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="OrderProcessStatus" ColumnName="OrderProcessStatus" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+          <ScalarProperty Name="OrderAdddate" ColumnName="OrderAdddate" />
+          <ScalarProperty Name="OrderType" ColumnName="OrderType" />
+          <ScalarProperty Name="KPPrice" ColumnName="KPPrice" />
+          <ScalarProperty Name="CertTypeOther" ColumnName="CertTypeOther" />
+          <ScalarProperty Name="CertType" ColumnName="CertType" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="CarModel" ColumnName="CarModel" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

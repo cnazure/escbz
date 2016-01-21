@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A7907BF-C2DF-472C-8E81-98C992AC34D3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UsedCarSolution</RootNamespace>
+    <AssemblyName>UsedCarSolution</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager">
+      <HintPath>..\Dll\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="Koumi.Common">
+      <HintPath>..\Dll\Koumi.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\addRole.aspx" />
+    <Content Include="Admin\addUser.aspx" />
+    <Content Include="Admin\resetPassword.aspx" />
+    <Content Include="Admin\selectPopedom.aspx" />
+    <Content Include="Admin\selectRole.aspx" />
+    <Content Include="Admin\updatePopedom.aspx" />
+    <Content Include="Admin\userList.aspx" />
+    <Content Include="Car\CarBrandAddorEdit.aspx" />
+    <Content Include="Car\CarBrandList.aspx" />
+    <Content Include="Car\CarInfoAddorEdit.aspx" />
+    <Content Include="Car\CarInfoList.aspx" />
+    <Content Include="Control\My97DatePicker\calendar.js" />
+    <Content Include="Control\My97DatePicker\config.js" />
+    <Content Include="Control\My97DatePicker\lang\en.js" />
+    <Content Include="Control\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="Control\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="Control\My97DatePicker\My97DatePicker.htm" />
+    <Content Include="Control\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="Control\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="Control\My97DatePicker\skin\default\down.jpg" />
+    <Content Include="Control\My97DatePicker\skin\default\img.gif" />
+    <Content Include="Control\My97DatePicker\skin\default\left.gif" />
+    <Content Include="Control\My97DatePicker\skin\default\navLeft.gif" />
+    <Content Include="Control\My97DatePicker\skin\default\navRight.gif" />
+    <Content Include="Control\My97DatePicker\skin\default\right.gif" />
+    <Content Include="Control\My97DatePicker\skin\default\up.jpg" />
+    <Content Include="Control\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="Control\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="Control\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="Control\My97DatePicker\skin\whyGreen\down.jpg" />
+    <Content Include="Control\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="Control\My97DatePicker\skin\whyGreen\left.gif" />
+    <Content Include="Control\My97DatePicker\skin\whyGreen\navLeft.gif" />
+    <Content Include="Control\My97DatePicker\skin\whyGreen\navRight.gif" />
+    <Content Include="Control\My97DatePicker\skin\whyGreen\other\bg2.jpg" />
+    <Content Include="Control\My97DatePicker\skin\whyGreen\other\interface.jpg" />
+    <Content Include="Control\My97DatePicker\skin\whyGreen\right.gif" />
+    <Content Include="Control\My97DatePicker\skin\whyGreen\up.jpg" />
+    <Content Include="Control\My97DatePicker\skin\whyGreen\ymbg.jpg" />
+    <Content Include="Control\My97DatePicker\WdatePicker.js" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\default.css" />
+    <Content Include="css\dengluxinxi.css" />
+    <Content Include="css\Paging.css" />
+    <Content Include="css\Share.css" />
+    <Content Include="css\table.css" />
+    <Content Include="css\validform.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\22.gif" />
+    <Content Include="images\33.gif" />
+    <Content Include="images\44.gif" />
+    <Content Include="images\back.gif" />
+    <Content Include="images\bg2.gif" />
+    <Content Include="images\biaoge_title_bg_x.gif" />
+    <Content Include="images\blank.gif" />
+    <Content Include="images\btnbg.png" />
+    <Content Include="images\btnbg1.png" />
+    <Content Include="images\caozuo_btn.png" />
+    <Content Include="images\caozuo_btn1.png" />
+    <Content Include="images\cheuks_tishi.jpg" />
+    <Content Include="images\default_goods_image.gif" />
+    <Content Include="images\del.gif" />
+    <Content Include="images\dexs.gif" />
+    <Content Include="images\dexs.png" />
+    <Content Include="images\edt.gif" />
+    <Content Include="images\error.png" />
+    <Content Include="images\fgddegdf65.jpg" />
+    <Content Include="images\filesave.png" />
+    <Content Include="images\first.gif" />
+    <Content Include="images\fopen.gif" />
+    <Content Include="images\fshut.gif" />
+    <Content Include="images\game_check_btn.png" />
+    <Content Include="images\go.gif" />
+    <Content Include="images\html_bg_x.jpg" />
+    <Content Include="images\huanyinjinyu.png" />
+    <Content Include="images\huanyinjinyu_bgx.gif" />
+    <Content Include="images\huanyinjinyu_text.png" />
+    <Content Include="images\ico_red.png" />
+    <Content Include="images\import.png" />
+    <Content Include="images\in_password.png" />
+    <Content Include="images\in_text.png" />
+    <Content Include="images\last.gif" />
+    <Content Include="images\login_bg.jpg" />
+    <Content Include="images\login_btn.png" />
+    <Content Include="images\login_text.jpg" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo_bg.jpg" />
+    <Content Include="images\log_bg.jpg" />
+    <Content Include="images\main_55.gif" />
+    <Content Include="images\main_55_1.gif" />
+    <Content Include="images\menu_bg.gif" />
+    <Content Include="images\menu_bg1.gif" />
+    <Content Include="images\menu_bg2.gif" />
+    <Content Include="images\menu_bgs.gif" />
+    <Content Include="images\menu_bgs1.gif" />
+    <Content Include="images\menu_topimg.gif" />
+    <Content Include="images\menu_topline.gif" />
+    <Content Include="images\minus.gif" />
+    <Content Include="images\nav_bg.gif" />
+    <Content Include="images\nav_bg1.png" />
+    <Content Include="images\nav_blck.png" />
+    <Content Include="images\new.gif" />
+    <Content Include="images\next.gif" />
+    <Content Include="images\onLoad.gif" />
+    <Content Include="images\panel_title.png" />
+    <Content Include="images\panel_tools.gif" />
+    <Content Include="images\plus.gif" />
+    <Content Include="images\right.png" />
+    <Content Include="images\sctp.png" />
+    <Content Include="images\tab-x.png" />
+    <Content Include="images\tab-y.png" />
+    <Content Include="images\tab_menus_bg.png" />
+    <Content Include="images\tb.gif" />
+    <Content Include="images\temp\add.png" />
+    <Content Include="images\temp\check.png" />
+    <Content Include="images\temp\delete.png" />
+    <Content Include="images\temp\refresh.png" />
+    <Content Include="images\temp\uncheck.png" />
+    <Content Include="images\tishi_bg.png" />
+    <Content Include="images\tishi_bg1.png" />
+    <Content Include="images\tishi_teite.png" />
+    <Content Include="images\tittlebg.gif" />
+    <Content Include="images\tree_arrows.gif" />
+    <Content Include="images\tree_file.gif" />
+    <Content Include="images\tree_folder.gif" />
+    <Content Include="images\tuichu_pic.png" />
+    <Content Include="images\tuichu_pic_S.png" />
+    <Content Include="images\tv-collapsable-last.gif" />
+    <Content Include="images\tv-collapsable.gif" />
+    <Content Include="images\tv-expandable-last.gif" />
+    <Content Include="images\tv-expandable.gif" />
+    <Content Include="images\tv-item-last.gif" />
+    <Content Include="images\tv-item.gif" />
+    <Content Include="images\upload_pic_bg.gif" />
+    <Content Include="images\vertline.gif" />
+    <Content Include="js\Admin\addAgents.js" />
+    <Content Include="js\Admin\addCustomer.js" />
+    <Content Include="js\Admin\addRole.js" />
+    <Content Include="js\Admin\addUser.js" />
+    <Content Include="js\Admin\Cookies.js" />
+    <Content Include="js\Admin\delAgents.js" />
+    <Content Include="js\Admin\delCustomer.js" />
+    <Content Include="js\Admin\delRole.js" />
+    <Content Include="js\Admin\delUser.js" />
+    <Content Include="js\Admin\leftNavigation.js" />
+    <Content Include="js\Admin\updatetPopedom.js" />
+    <Content Include="js\ajaxfileupload.js" />
+    <Content Include="js\BMap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\Car\addCarInfo.js" />
+    <Content Include="js\Car\checkCarInfo.js" />
+    <Content Include="js\Car\delCarInfo.js" />
+    <Content Include="js\jqmain.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\knockout-3.2.0.js" />
+    <Content Include="js\moo.fx.js" />
+    <Content Include="js\moo.fx.pack.js" />
+    <Content Include="js\operatePage.js" />
+    <Content Include="js\Order\report_detail.js" />
+    <Content Include="js\Order\report_edit.js" />
+    <Content Include="js\prototype.lite.js" />
+    <Content Include="js\User\addUser.js" />
+    <Content Include="js\User\addVip.js" />
+    <Content Include="js\Validform_v5.3.2_min.js" />
+    <Content Include="left.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="main.aspx" />
+    <Content Include="Order\DistributionOrder.aspx" />
+    <Content Include="Order\js\js_AddOrder.js" />
+    <Content Include="Order\New_BuyOrder.aspx" />
+    <Content Include="Order\New_SellOrder.aspx" />
+    <Content Include="Order\WaitingCertList.aspx" />
+    <Content Include="Order\WaitingCertView.aspx" />
+    <Content Include="Order\WaitingOrderList.aspx" />
+    <Content Include="Order\WaitingOrderView.aspx" />
+    <Content Include="tab.aspx" />
+    <Content Include="top.aspx" />
+    <Content Include="User\AgentsAddorEdit.aspx" />
+    <Content Include="User\AgentsList.aspx" />
+    <Content Include="User\CustomerAddorEdit.aspx" />
+    <Content Include="User\CustomerList.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\addRole.aspx.cs">
+      <DependentUpon>addRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\addRole.aspx.designer.cs">
+      <DependentUpon>addRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\addUser.aspx.cs">
+      <DependentUpon>addUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\addUser.aspx.designer.cs">
+      <DependentUpon>addUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\resetPassword.aspx.cs">
+      <DependentUpon>resetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\resetPassword.aspx.designer.cs">
+      <DependentUpon>resetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\selectPopedom.aspx.cs">
+      <DependentUpon>selectPopedom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\selectPopedom.aspx.designer.cs">
+      <DependentUpon>selectPopedom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\selectRole.aspx.cs">
+      <DependentUpon>selectRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\selectRole.aspx.designer.cs">
+      <DependentUpon>selectRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\updatePopedom.aspx.cs">
+      <DependentUpon>updatePopedom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\updatePopedom.aspx.designer.cs">
+      <DependentUpon>updatePopedom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\userList.aspx.cs">
+      <DependentUpon>userList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\userList.aspx.designer.cs">
+      <DependentUpon>userList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ashx\Admin\addRole.ashx.cs">
+      <DependentUpon>addRole.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ashx\Car\CarInfo.ashx.cs">
+      <DependentUpon>CarInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ashx\Common\UploadImageHandler.ashx.cs">
+      <DependentUpon>UploadImageHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ashx\Order\OrderInfo.ashx.cs">
+      <DependentUpon>OrderInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ashx\User\Agents.ashx.cs">
+      <DependentUpon>Agents.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ashx\Admin\leftNavigation.ashx.cs">
+      <DependentUpon>leftNavigation.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ashx\Admin\loginCheck.ashx.cs">
+      <DependentUpon>loginCheck.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ashx\Admin\top.ashx.cs">
+      <DependentUpon>top.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ashx\Admin\updateRole.ashx.cs">
+      <DependentUpon>updateRole.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ashx\Admin\userOperate.ashx.cs">
+      <DependentUpon>userOperate.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ashx\User\Customer.ashx.cs">
+      <DependentUpon>Customer.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ashx\User\updateCustomer.ashx.cs">
+      <DependentUpon>updateCustomer.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Car\CarBrandAddorEdit.aspx.cs">
+      <DependentUpon>CarBrandAddorEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car\CarBrandAddorEdit.aspx.designer.cs">
+      <DependentUpon>CarBrandAddorEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Car\CarBrandList.aspx.cs">
+      <DependentUpon>CarBrandList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car\CarBrandList.aspx.designer.cs">
+      <DependentUpon>CarBrandList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Car\CarInfoAddorEdit.aspx.cs">
+      <DependentUpon>CarInfoAddorEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car\CarInfoAddorEdit.aspx.designer.cs">
+      <DependentUpon>CarInfoAddorEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Car\CarInfoList.aspx.cs">
+      <DependentUpon>CarInfoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car\CarInfoList.aspx.designer.cs">
+      <DependentUpon>CarInfoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="left.aspx.cs">
+      <DependentUpon>left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="left.aspx.designer.cs">
+      <DependentUpon>left.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\DistributionOrder.aspx.cs">
+      <DependentUpon>DistributionOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\DistributionOrder.aspx.designer.cs">
+      <DependentUpon>DistributionOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\New_BuyOrder.aspx.cs">
+      <DependentUpon>New_BuyOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\New_BuyOrder.aspx.designer.cs">
+      <DependentUpon>New_BuyOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\New_SellOrder.aspx.cs">
+      <DependentUpon>New_SellOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\New_SellOrder.aspx.designer.cs">
+      <DependentUpon>New_SellOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\WaitingCertList.aspx.cs">
+      <DependentUpon>WaitingCertList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\WaitingCertList.aspx.designer.cs">
+      <DependentUpon>WaitingCertList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\WaitingCertView.aspx.cs">
+      <DependentUpon>WaitingCertView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\WaitingCertView.aspx.designer.cs">
+      <DependentUpon>WaitingCertView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\WaitingOrderList.aspx.cs">
+      <DependentUpon>WaitingOrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\WaitingOrderList.aspx.designer.cs">
+      <DependentUpon>WaitingOrderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\WaitingOrderView.aspx.cs">
+      <DependentUpon>WaitingOrderView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\WaitingOrderView.aspx.designer.cs">
+      <DependentUpon>WaitingOrderView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tab.aspx.cs">
+      <DependentUpon>tab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tab.aspx.designer.cs">
+      <DependentUpon>tab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="top.aspx.cs">
+      <DependentUpon>top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="top.aspx.designer.cs">
+      <DependentUpon>top.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\AgentsAddorEdit.aspx.cs">
+      <DependentUpon>AgentsAddorEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\AgentsAddorEdit.aspx.designer.cs">
+      <DependentUpon>AgentsAddorEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\AgentsList.aspx.cs">
+      <DependentUpon>AgentsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\AgentsList.aspx.designer.cs">
+      <DependentUpon>AgentsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\CustomerAddorEdit.aspx.cs">
+      <DependentUpon>CustomerAddorEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\CustomerAddorEdit.aspx.designer.cs">
+      <DependentUpon>CustomerAddorEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\CustomerList.aspx.cs">
+      <DependentUpon>CustomerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\CustomerList.aspx.designer.cs">
+      <DependentUpon>CustomerList.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Ashx\Admin\addRole.ashx" />
+    <Content Include="Ashx\Admin\leftNavigation.ashx" />
+    <Content Include="Ashx\Admin\loginCheck.ashx" />
+    <Content Include="Ashx\Admin\top.ashx" />
+    <Content Include="Ashx\Admin\updateRole.ashx" />
+    <Content Include="Ashx\Admin\userOperate.ashx" />
+    <Content Include="Ashx\User\Agents.ashx" />
+    <Content Include="Ashx\User\Customer.ashx" />
+    <Content Include="Ashx\User\updateCustomer.ashx" />
+    <Content Include="Ashx\Car\CarInfo.ashx" />
+    <Content Include="Ashx\Common\UploadImageHandler.ashx" />
+    <Content Include="Ashx\Order\OrderInfo.ashx" />
+    <None Include="Properties\PublishProfiles\UsedCar.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UsedCarDB\UsedCarDB.csproj">
+      <Project>{3d96610c-ea31-4cf4-85a8-89d39b4d0b55}</Project>
+      <Name>UsedCarDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UsedCarModle\UsedCarModle.csproj">
+      <Project>{18d9e32e-1879-4ed4-af56-16afd1d72480}</Project>
+      <Name>UsedCarModle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UsedCarPublic\UsedCarPublic.csproj">
+      <Project>{f6374769-9abd-450b-8735-af1b783640ef}</Project>
+      <Name>UsedCarPublic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserdCarBLL\UsedCarBLL.csproj">
+      <Project>{d6cbac7c-ad09-4b8a-90ee-af65a721ae71}</Project>
+      <Name>UsedCarBLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4687</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64765/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://www.usedcar.com</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

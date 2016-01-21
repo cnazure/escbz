@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UsedCarDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="UsedCarDBModelStoreContainer">
+    <EntitySet Name="Admin_PopedomInfo" EntityType="UsedCarDBModel.Store.Admin_PopedomInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Admin_RoleInfo" EntityType="UsedCarDBModel.Store.Admin_RoleInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Admin_RolePoperdomInfo" EntityType="UsedCarDBModel.Store.Admin_RolePoperdomInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Admin_UserInfo" EntityType="UsedCarDBModel.Store.Admin_UserInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Admin_UserInfoRole" EntityType="UsedCarDBModel.Store.Admin_UserInfoRole" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_Agents" EntityType="UsedCarDBModel.Store.T_Agents" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_CAR_BRAND" EntityType="UsedCarDBModel.Store.T_CAR_BRAND" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_CarInfo" EntityType="UsedCarDBModel.Store.T_CarInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_CarInfo_Log" EntityType="UsedCarDBModel.Store.T_CarInfo_Log" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_CarOrder" EntityType="UsedCarDBModel.Store.T_CarOrder" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_city" EntityType="UsedCarDBModel.Store.T_city" store:Type="Tables" store:Schema="dbo" store:Name="T_city">
+      <DefiningQuery>SELECT 
+      [T_city].[id] AS [id], 
+      [T_city].[cityID] AS [cityID], 
+      [T_city].[city] AS [city], 
+      [T_city].[fatherID] AS [fatherID]
+      FROM [dbo].[T_city] AS [T_city]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_Customer" EntityType="UsedCarDBModel.Store.T_Customer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_province" EntityType="UsedCarDBModel.Store.T_province" store:Type="Tables" store:Schema="dbo" store:Name="T_province">
+      <DefiningQuery>SELECT 
+      [T_province].[id] AS [id], 
+      [T_province].[provinceID] AS [provinceID], 
+      [T_province].[province] AS [province]
+      FROM [dbo].[T_province] AS [T_province]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_SEND" EntityType="UsedCarDBModel.Store.T_SEND" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="View_OrderInfo" EntityType="UsedCarDBModel.Store.View_OrderInfo" store:Type="Views" store:Schema="dbo" store:Name="View_OrderInfo">
+      <DefiningQuery>SELECT 
+      [View_OrderInfo].[Expr1] AS [Expr1], 
+      [View_OrderInfo].[CarModel] AS [CarModel], 
+      [View_OrderInfo].[OrderId] AS [OrderId], 
+      [View_OrderInfo].[CertType] AS [CertType], 
+      [View_OrderInfo].[CertTypeOther] AS [CertTypeOther], 
+      [View_OrderInfo].[KPPrice] AS [KPPrice], 
+      [View_OrderInfo].[OrderType] AS [OrderType], 
+      [View_OrderInfo].[OrderAdddate] AS [OrderAdddate], 
+      [View_OrderInfo].[OrderStatus] AS [OrderStatus], 
+      [View_OrderInfo].[OrderProcessStatus] AS [OrderProcessStatus], 
+      [View_OrderInfo].[CustomerName] AS [CustomerName], 
+      [View_OrderInfo].[CarId] AS [CarId], 
+      [View_OrderInfo].[CarVIN] AS [CarVIN], 
+      [View_OrderInfo].[SHType] AS [SHType], 
+      [View_OrderInfo].[DJDate] AS [DJDate], 
+      [View_OrderInfo].[YHJD] AS [YHJD], 
+      [View_OrderInfo].[YCZXM] AS [YCZXM], 
+      [View_OrderInfo].[YCZDH] AS [YCZDH], 
+      [View_OrderInfo].[YCPHM] AS [YCPHM], 
+      [View_OrderInfo].[YSFDC] AS [YSFDC], 
+      [View_OrderInfo].[XHJD] AS [XHJD], 
+      [View_OrderInfo].[XCZXM] AS [XCZXM], 
+      [View_OrderInfo].[XCZDH] AS [XCZDH], 
+      [View_OrderInfo].[XCPHM] AS [XCPHM], 
+      [View_OrderInfo].[XSFDC] AS [XSFDC], 
+      [View_OrderInfo].[TCDD] AS [TCDD], 
+      [View_OrderInfo].[LXR] AS [LXR], 
+      [View_OrderInfo].[LXRDH] AS [LXRDH], 
+      [View_OrderInfo].[YDDate] AS [YDDate], 
+      [View_OrderInfo].[Sales] AS [Sales], 
+      [View_OrderInfo].[AddUser] AS [AddUser], 
+      [View_OrderInfo].[ImgUrl] AS [ImgUrl]
+      FROM [dbo].[View_OrderInfo] AS [View_OrderInfo]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <EntityType Name="Admin_PopedomInfo">
+    <Key>
+      <PropertyRef Name="PopedomId" />
+    </Key>
+    <Property Name="PopedomId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PopedomName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ParentID" Type="int" />
+    <Property Name="Url" Type="nvarchar" MaxLength="200" />
+    <Property Name="sortId" Type="int" />
+    <Property Name="ParentType" Type="int" />
+  </EntityType>
+  <EntityType Name="Admin_RoleInfo">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="RoleCreateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Admin_RolePoperdomInfo">
+    <Key>
+      <PropertyRef Name="RolePoerdomID" />
+    </Key>
+    <Property Name="RolePoerdomID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleID" Type="int" Nullable="false" />
+    <Property Name="PopedomId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Admin_UserInfo">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="UserPass" Type="varchar" MaxLength="50" />
+    <Property Name="Sex" Type="char" MaxLength="2" />
+    <Property Name="Phone" Type="varchar" MaxLength="50" />
+    <Property Name="Address" Type="varchar" MaxLength="50" />
+    <Property Name="TrueName" Type="varchar" MaxLength="50" />
+    <Property Name="Time" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Admin_UserInfoRole">
+    <Key>
+      <PropertyRef Name="UserRoleId" />
+    </Key>
+    <Property Name="UserRoleId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_Agents">
+    <Key>
+      <PropertyRef Name="Aid" />
+    </Key>
+    <Property Name="Aid" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="AName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ATel" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="AddDate" Type="datetime" />
+    <Property Name="AddUser" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="isUsing" Type="bit" />
+  </EntityType>
+  <EntityType Name="T_CAR_BRAND">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="brandName" Type="nvarchar" MaxLength="100" />
+    <Property Name="createDate" Type="datetime" />
+    <Property Name="operateUser" Type="nvarchar" MaxLength="100" />
+    <Property Name="iconImg" Type="nvarchar" MaxLength="100" />
+    <Property Name="isValid" Type="int" />
+    <Property Name="firstPY" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="T_CarInfo">
+    <Key>
+      <PropertyRef Name="CarId" />
+    </Key>
+    <Property Name="CarId" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CarVIN" Type="varchar" MaxLength="50" />
+    <Property Name="CarModel" Type="varchar" MaxLength="100" />
+    <Property Name="FirstOnCard" Type="datetime" />
+    <Property Name="ImgType" Type="int" />
+    <Property Name="ImgUrl" Type="varchar" MaxLength="500" />
+    <Property Name="AddDate" Type="datetime" Nullable="false" />
+    <Property Name="AddUser" Type="varchar" MaxLength="50" />
+    <Property Name="isUsing" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_CarInfo_Log">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CarId" Type="varchar" MaxLength="50" />
+    <Property Name="status" Type="int" />
+    <Property Name="processStatus" Type="varchar" MaxLength="50" />
+    <Property Name="statusRemark" Type="varchar" MaxLength="200" />
+    <Property Name="EditUser" Type="varchar" MaxLength="50" />
+    <Property Name="EditDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_CarOrder">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CertType" Type="varchar" MaxLength="50" />
+    <Property Name="CertTypeOther" Type="varchar" MaxLength="50" />
+    <Property Name="KPPrice" Type="money" />
+    <Property Name="OrderType" Type="int" />
+    <Property Name="OrderAdddate" Type="datetime" />
+    <Property Name="OrderStatus" Type="int" />
+    <Property Name="OrderProcessStatus" Type="varchar" MaxLength="50" />
+    <Property Name="CustomerName" Type="varchar" MaxLength="50" />
+    <Property Name="CarId" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CarVIN" Type="varchar" MaxLength="50" />
+    <Property Name="SHType" Type="int" />
+    <Property Name="DJDate" Type="datetime" />
+    <Property Name="YHJD" Type="varchar" MaxLength="50" />
+    <Property Name="YCZXM" Type="varchar" MaxLength="50" />
+    <Property Name="YCZDH" Type="varchar" MaxLength="50" />
+    <Property Name="YCPHM" Type="varchar" MaxLength="50" />
+    <Property Name="YSFDC" Type="bit" />
+    <Property Name="XHJD" Type="varchar" MaxLength="50" />
+    <Property Name="XCZXM" Type="varchar" MaxLength="50" />
+    <Property Name="XCZDH" Type="varchar" MaxLength="50" />
+    <Property Name="XCPHM" Type="varchar" MaxLength="50" />
+    <Property Name="XSFDC" Type="bit" />
+    <Property Name="TCDD" Type="varchar" MaxLength="50" />
+    <Property Name="LXR" Type="varchar" MaxLength="50" />
+    <Property Name="LXRDH" Type="varchar" MaxLength="50" />
+    <Property Name="YDDate" Type="datetime" />
+    <Property Name="Sales" Type="varchar" MaxLength="50" />
+    <Property Name="AddUser" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'UsedCarDB.dbo.T_city' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="T_city">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="cityID" />
+      <PropertyRef Name="city" />
+      <PropertyRef Name="fatherID" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="cityID" Type="int" Nullable="false" />
+    <Property Name="city" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="fatherID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_Customer">
+    <Key>
+      <PropertyRef Name="CId" />
+    </Key>
+    <Property Name="CId" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Contacts" Type="varchar" MaxLength="50" />
+    <Property Name="CTel" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CAddress" Type="varchar" MaxLength="500" />
+    <Property Name="BelongUser" Type="varchar" MaxLength="50" />
+    <Property Name="AddDate" Type="datetime" />
+    <Property Name="AddUser" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="isUsing" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'UsedCarDB.dbo.T_province' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="T_province">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="provinceID" />
+      <PropertyRef Name="province" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="provinceID" Type="int" Nullable="false" />
+    <Property Name="province" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="T_SEND">
+    <Key>
+      <PropertyRef Name="SendID" />
+    </Key>
+    <Property Name="SendID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SendNum" Type="varchar" MaxLength="100" />
+    <Property Name="SendType" Type="int" />
+    <Property Name="State" Type="bit" Nullable="false" />
+    <Property Name="SendCode" Type="varchar" MaxLength="50" />
+    <Property Name="EquipContent" Type="varchar(max)" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="SendFunction" Type="varchar" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="SendKey" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'UsedCarDB.dbo.View_OrderInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="View_OrderInfo">
+    <Key>
+      <PropertyRef Name="OrderId" />
+      <PropertyRef Name="CarId" />
+      <PropertyRef Name="AddUser" />
+    </Key>
+    <Property Name="Expr1" Type="varchar" MaxLength="50" />
+    <Property Name="CarModel" Type="varchar" MaxLength="100" />
+    <Property Name="OrderId" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CertType" Type="varchar" MaxLength="50" />
+    <Property Name="CertTypeOther" Type="varchar" MaxLength="50" />
+    <Property Name="KPPrice" Type="money" />
+    <Property Name="OrderType" Type="int" />
+    <Property Name="OrderAdddate" Type="datetime" />
+    <Property Name="OrderStatus" Type="int" />
+    <Property Name="OrderProcessStatus" Type="varchar" MaxLength="50" />
+    <Property Name="CustomerName" Type="varchar" MaxLength="50" />
+    <Property Name="CarId" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CarVIN" Type="varchar" MaxLength="50" />
+    <Property Name="SHType" Type="int" />
+    <Property Name="DJDate" Type="datetime" />
+    <Property Name="YHJD" Type="varchar" MaxLength="50" />
+    <Property Name="YCZXM" Type="varchar" MaxLength="50" />
+    <Property Name="YCZDH" Type="varchar" MaxLength="50" />
+    <Property Name="YCPHM" Type="varchar" MaxLength="50" />
+    <Property Name="YSFDC" Type="bit" />
+    <Property Name="XHJD" Type="varchar" MaxLength="50" />
+    <Property Name="XCZXM" Type="varchar" MaxLength="50" />
+    <Property Name="XCZDH" Type="varchar" MaxLength="50" />
+    <Property Name="XCPHM" Type="varchar" MaxLength="50" />
+    <Property Name="XSFDC" Type="bit" />
+    <Property Name="TCDD" Type="varchar" MaxLength="50" />
+    <Property Name="LXR" Type="varchar" MaxLength="50" />
+    <Property Name="LXRDH" Type="varchar" MaxLength="50" />
+    <Property Name="YDDate" Type="datetime" />
+    <Property Name="Sales" Type="varchar" MaxLength="50" />
+    <Property Name="AddUser" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ImgUrl" Type="varchar" MaxLength="500" />
+  </EntityType>
+</Schema>

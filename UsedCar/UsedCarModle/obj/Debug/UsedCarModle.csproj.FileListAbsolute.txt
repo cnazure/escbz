@@ -1,0 +1,8 @@
+E:\ESCBZ\UsedCar\UsedCarModle\bin\Debug\UsedCarModle.dll
+E:\ESCBZ\UsedCar\UsedCarModle\bin\Debug\UsedCarModle.pdb
+E:\ESCBZ\UsedCar\UsedCarModle\obj\Debug\UsedCarModle.dll
+E:\ESCBZ\UsedCar\UsedCarModle\obj\Debug\UsedCarModle.pdb
+E:\Work\ESCBZ\UsedCar\UsedCarModle\bin\Debug\UsedCarModle.dll
+E:\Work\ESCBZ\UsedCar\UsedCarModle\bin\Debug\UsedCarModle.pdb
+E:\Work\ESCBZ\UsedCar\UsedCarModle\obj\Debug\UsedCarModle.dll
+E:\Work\ESCBZ\UsedCar\UsedCarModle\obj\Debug\UsedCarModle.pdb

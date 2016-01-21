@@ -1,0 +1,263 @@
+﻿
+
+.table_list_tb{ padding:0px; border-collapse:collapse; background-color:#fff; border:solid 1px #def;}
+.table_list_tb th{height:30px; line-height:30px; font-size:12px; color:#fff; background-color:#5599dd; border:#5588cc solid 1px;  border-top:#5599dd solid 1px;}
+.table_list_tb td{ padding:5px 10px; height:20px; line-height:20px; text-align:center; color:#666; border:solid 1px #def;}
+.table_list_tb td a{ color:#39F;}
+.table_list_tb td a:visited{ color:#800080;}
+.table_list_tb td p{ margin-bottom:5px; padding:0 10px; line-height:18px;}
+.table_list_tb td .txt{ text-align:left;}
+.table_list_tb td .txt span{ display:inline-block; margin-right:3px; width:20px; height:20px; vertical-align:middle;}
+.table_list_tb td .txt a{vertical-align:middle;}
+.table_list_tb td .qf{ text-align:left; color:#888;}
+.table_list_tb td .bz{ text-align:left;}
+.table_list_tb td .bz span{ display:inline-block; margin-right:3px; width:20px; height:20px; vertical-align:middle;}
+
+.table_list_tb .odd td{ background:#fff;}
+.table_list_tb .even td{ background:#eef8ff;}
+.table_list_tb .td_hover td{ color:#cc6633; background-color:#fff9ee;  border-right:#ffe8cc solid 1px; cursor:default;}
+
+
+table tr.tr_1{background:#fff2f2;	} /*--淡红色--*/
+table tr.tr_2{background:#f3faff;	} /*--淡蓝色--*/
+table tr.tr_3{background:#fcfff6;	} /*--淡绿色--*/
+table tr.tr_4{background:#f2f2f2;	} /*--淡灰色--*/
+.table_hover tr:hover{background:#fff9ee;}
+
+/*商品详情页面*//*保障*/
+.ic_cs,/*超时赔付*/
+.ic_wh,/*无货赔付*/
+.ic_ss,/*描述属实*/
+.ic_aq,/*安全保障*/
+.ic_tg,/*身份认证*/
+.ic_gr,/*绿色购物*/
+.ic_eid/*安全认证*/
+{ background-image:url("../images/iconbg_v1.png");  background-repeat:no-repeat; }
+
+.ic_cs  {background-position:0px -433px;}
+.ic_wh  {background-position:0px -257px;}
+.ic_ss  {background-position:0px -335px;}
+.ic_aq  {background-position:0px -309px;}
+.ic_tg  {background-position:0px -281px;}
+.ic_gr  {background-position:0px -802px;}
+.ic_eid {background-position:0px -924px;}
+
+
+/*商品详情页面*//*交易类型*/
+.ic_js,/*寄售交易*/
+.ic_zh,/*卖家直冲*/
+.ic_db,/*担保交易*/
+.ic_dk,/*点卡交易*/
+.ic_hz,/*官方*/
+.ic_dl,/*游戏代练*/
+.ic_qg,/*代练求购*/
+.ic_kc,/*卖家快充*/
+.ic_km,/*自动卡密*/
+.ic_zc,/*卖家直充*/
+.ic_mc /*卖家慢充*/
+{background-image:url("../images/iconbg_v1.png");background-repeat:no-repeat;}
+
+.ic_js {background-position:0px 3px;}
+.ic_zh {background-position:0px -49px;}
+.ic_db {background-position:0px -23px;}
+.ic_dk {background-position:0px -75px;}
+.ic_hz {background-position:0px -536px;}
+.ic_dl {background-position:0px -101px;}
+.ic_qg {background-position:0px -127px;}
+.ic_kc {background-position:0px -153px;}
+.ic_km {background-position:0px -179px;}
+.ic_zc {background-position:0px -205px;}
+.ic_mc {background-position:2px -231px;}
+
+
+.table_list_lf{ width:100%; border-collapse:collapse; background-color:#fff; border:solid 1px #def;}
+.table_list_lf th{ padding:0 10px; width:180px; height:30px; line-height:30px; text-align:right; font-size:12px;  background-color:#eee; border:solid 1px #ccc; }
+.table_list_lf td{ padding:5px 10px; text-align:left; color:#666; border:solid 1px #ccc; width:auto;}
+.table_list_lf td a{ color:#39F;}
+.table_list_lf input{ margin-right:3px; vertical-align:middle;}
+.table_list_lf .odd { background:#fff;}
+.table_list_lf .even { background:#eef8ff;}
+
+
+.table_list_lf2{border-collapse:collapse; background-color:#fff; border:solid 6px #66aaee;}
+.table_list_lf2 th{ padding:5px 8px; width:260px; height:22px; line-height:22px; text-align:right; vertical-align:top; font-size:12px; background-color:#def;}
+.table_list_lf2 td{ padding:5px 8px; height:22px; line-height:22px; text-align:left; color:#666;}
+.table_list_lf2 td a{ color:#39F;}
+.table_list_lf2 input{ margin-right:3px; vertical-align:middle;}
+.table_list_lf2 .odd { background:#fff;}
+.table_list_lf2 .even { background:#eef8ff;}
+.table_list_lf2 .even th { background:#cce8ff;}
+
+.table_list_lf_3{ border:solid 1px #def;border-collapse:collapse; text-align:center; line-height:30px;}
+.table_list_lf_3 th{
+	background:#99ccff;
+	border:1px solid #def;
+	 color:#fff;
+	}
+.table_list_lf_3 td{
+	background:#fefefe;
+	border:1px solid #def;
+	}
+
+
+.table_list_lr{ margin-bottom:10px; border-collapse:collapse; background:#66aaee;}
+
+
+.table_2box{ margin-bottom:10px; padding:1px; width:100%; border-collapse:collapse; background-color:#fff; border:solid 1px #bdf;}
+.table_2box th{ padding:0 15px; height:30px; line-height:30px; text-align:left; font-size:12px; background-color:#def; border:solid 1px #def; border-bottom:solid 1px #bdf;}
+.table_2box td{ line-height:25px; text-align:left; color:#666; border:solid 1px #def;}
+.table_2box td .zhecont{ position:relative; padding:10px 15px; height:100px; overflow:hidden;}
+.table_2box td .zhecont p{ position:relative; z-index:2;}
+.table_2box td .zheceng{ position:absolute; top:0px; left:0px; width:100%; _width:2000px; height:120px; background-color:#bdf;
+ filter:Alpha(opacity=30); /* IE */    
+ -moz-opacity:0.3;    /* FF 主要是为了兼容老版本的FF */
+ opacity:0.3;    /* FF */
+ z-index:555;}
+.table_2box td .edtceng{ position:absolute; top:0px; left:0px; width:100%; _width:2000px; height:120px; background:#fff8ee; z-index:0; }
+
+
+
+.table_2box td a{ color:#39F;}
+.table_2box td p{ margin-bottom:8px;}
+.table_2box td textarea{ padding:5px; max-width:90%; width:90%; height:60px; border:#ddd solid 1px;}
+.table_2box td p.edit_color input{ margin:0 5px; vertical-align:middle;}
+
+.color_red{ color:#f00;}/*红色*/
+.color_blk{ color:#000;}/*黑色*/
+.color_blk_9{ color:#999;}/*灰色*/
+span.color_blk_9 a{ color:#999;}
+.color_org{ color:#f80;}/*橙色*/
+.color_gre{ color:#390;}/*绿色*/
+.color_blu{ color:#06c;}/*蓝色*/
+.color_pur{ color:#606;}/*紫色*/
+
+
+
+.searchcont{ margin-bottom:10px; padding:8px; background:#fcfcfc; border:#efefef solid 1px; }
+.table_search{ padding:1px; border-collapse:collapse;}
+.table_search th{ padding:0 5px; width:100px; height:28px; line-height:28px; text-align:right; font-size:12px; background-color:#eee; border:solid 1px #ccc; }
+.table_search td{ padding:8px 8px; text-align:left; color:#666; background-color:#fff; border:solid 1px #ccc;}
+.table_search td a{ color:#39F;}
+
+.table_detail{ padding:1px; border-collapse:collapse;}
+.table_detail th{ padding:0 5px; width:120px; height:28px; line-height:28px; text-align:right; font-size:12px; background-color:#eee; border:solid 1px #ccc; }
+.table_detail td{ padding:8px 8px; text-align:left; color:#666; background-color:#fff; border:solid 1px #ccc;}
+
+
+
+
+/*表格内样式*/
+.bbt,
+td.bt
+{  background-repeat:no-repeat; }
+
+.bbt{ padding:0 20px; height:30px; line-height:30px; font-size:14px; font-weight:bold; color:#fff; background-color:#ccc; background-position:5px 9px; border:#ccc solid 1px;  border-bottom:none;}
+td.bbt{ padding:0 20px; height:30px; line-height:30px; font-size:14px; font-weight:bold; color:#fff; background-color:#ccc; background-position:5px 9px; border:#ccc solid 1px;  border-bottom:none;}
+div.bbt{ margin-bottom:8px;}
+
+td.bt{ padding-left:20px; font-size:13px; font-weight:bold; color:#003366; background-color:#fff; border:#bdf solid 1px;}
+table th.bt{ color:#600;}
+
+th.requisite{background-image:url(../images/icon.png); background-repeat:no-repeat; background-position:100% -30px;}
+
+td.bbj,.th.bbj{ padding:0 20px; height:30px; line-height:30px; font-size:14px; font-weight:bold; color:#fff; background:#66aaee; border:#5599dd solid 1px;  border-bottom:none; text-align:center;}
+
+th.bbj{ text-align:left; padding-left:20px;}
+th.bbj a{ color:#f90}
+
+
+
+.brn{ border-right:none;}
+
+.mt{ margin-top:8px;}
+.mb{ margin-bottom:8px;}
+.mr{ margin-right:8px; _display:inline;}
+.ml{ margin-left:8px;}
+
+.table_list_lf_4{
+	border-collapse:collapse;border:solid 1px #def;
+	}
+ .table_list_lf_4 th{
+	width:100px;
+	border:solid 1px #def;
+	}
+.table_list_lf_4 td{
+	background:#fff;
+	border:solid 1px #def;
+	}	
+	
+ 
+.table_list_lf_5{
+	line-height:25px;
+	border-collapse:collapse;
+	border:solid 1px #ddeeff;
+	}
+.table_list_lf_5 th{
+	padding-right:10px;
+	width:100px;
+	height:25px;
+	border:solid 1px #ddeeff;
+	background:#eef8ff;
+	text-align:right;
+	}
+.table_list_lf_5 td{
+	padding:2px 0;
+	text-indent:10px;
+	border:solid 1px #ddeeff;
+	}	
+.table_list_lf_5 td.bbd{
+	background:#cce8ff;
+	border-bottom:solid 1px #b0d5f4;
+	font:bold 14px/25px "宋体";
+	}
+
+.table_list_lf_6{
+	 border-collapse:collapse;
+	 line-height:30px;
+	 }
+.table_list_lf_6 th{
+	background:#99ccff;
+	border:1px solid #def;
+	color:#fff;
+	text-align:left;
+	padding-left:10px;
+	}
+.table_list_lf_6 td{
+	padding-left:10px;
+	text-align:left;
+	background:#fefefe;
+	border:1px solid #def;
+	}
+.table_list_lf_6 td a{
+	color:#09f;
+	}
+	
+	
+	
+.table_bg_7{
+	 border-collapse:collapse;
+	 line-height:30px;
+	}
+.table_bg_7 th{
+	background:#5599dd;
+	border:1px solid #def;
+	color:#fff;
+	text-align:left;
+	padding-left:10px;
+	}
+.table_bg_7 td{
+	padding-left:10px;
+	text-align:left;
+	background:#fefefe;
+	border:1px solid #def;
+	}
+.table_bg_7 td a{
+	color:#09f;
+	}
+.table_bg_7 .odd td{ background:#fff;}
+.table_bg_7 .even td{ background:#eef8ff;}
+.table_bg_7 .td_hover td{ color:#cc6633; background-color:#fff9ee;  border-right:#ffe8cc solid 1px; cursor:default;}
+.wd tr th.w1{width:200px;}
+
+
+

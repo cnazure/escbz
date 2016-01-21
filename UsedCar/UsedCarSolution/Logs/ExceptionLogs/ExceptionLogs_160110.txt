@@ -1,0 +1,85 @@
+2016/1/10 22:38:01
+用户Agent信息：Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36
+客户端IP：127.0.0.1
+服务端IP：127.0.0.1
+详细信息：
+=================================
+WebService 发生错误 事件记录
+错误入口:http://www.usedcar.com/ashx/Admin/userOperate.ashx?p=0.42215268895961344
+错误Id:-1
+错误信息:存储区更新、插入或删除语句影响到了意外的行数(0)。实体在加载后可能被修改或删除。刷新 ObjectStateManager 项。
+堆栈追踪:   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 UsedCarDB.RepositoryImpl.Repository`1.Delete(T entity) 位置 e:\Work\ESCBZ\UsedCar\UsedCarDB\RepositoryImpl\Repository.cs:行号 112
+   在 UsedCarDAL.Admin.UserService.DelUserRole(Admin_UserInfoRole userInfoRole) 位置 e:\Work\ESCBZ\UsedCar\UsedCarDAL\Admin\UserService.cs:行号 151
+   在 UsedCarBLL.Admin.UserManager.DelUserRole(Admin_UserInfoRole userInfoRole) 位置 e:\Work\ESCBZ\UsedCar\UserdCarBLL\Admin\UserManager.cs:行号 140
+   在 UsedCarSolution.Ashx.Admin.userOperate.DelUser(HttpContext context) 位置 e:\Work\ESCBZ\UsedCar\UsedCarSolution\Ashx\Admin\userOperate.ashx.cs:行号 114
+=================================
+
+2016/1/10 22:41:03
+用户Agent信息：Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36
+客户端IP：127.0.0.1
+服务端IP：127.0.0.1
+详细信息：
+=================================
+WebService 发生错误 事件记录
+错误入口:http://www.usedcar.com/ashx/Admin/userOperate.ashx?p=0.29458267078734934
+错误Id:-1
+错误信息:存储区更新、插入或删除语句影响到了意外的行数(0)。实体在加载后可能被修改或删除。刷新 ObjectStateManager 项。
+堆栈追踪:   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 UsedCarDB.RepositoryImpl.Repository`1.Delete(T entity) 位置 e:\Work\ESCBZ\UsedCar\UsedCarDB\RepositoryImpl\Repository.cs:行号 112
+   在 UsedCarDAL.Admin.UserService.DelUserRole(Admin_UserInfoRole userInfoRole) 位置 e:\Work\ESCBZ\UsedCar\UsedCarDAL\Admin\UserService.cs:行号 151
+   在 UsedCarBLL.Admin.UserManager.DelUserRole(Admin_UserInfoRole userInfoRole) 位置 e:\Work\ESCBZ\UsedCar\UserdCarBLL\Admin\UserManager.cs:行号 140
+   在 UsedCarSolution.Ashx.Admin.userOperate.DelUser(HttpContext context) 位置 e:\Work\ESCBZ\UsedCar\UsedCarSolution\Ashx\Admin\userOperate.ashx.cs:行号 114
+=================================
+
+2016/1/10 22:41:29
+用户Agent信息：Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36
+客户端IP：127.0.0.1
+服务端IP：127.0.0.1
+详细信息：
+=================================
+WebService 发生错误 事件记录
+错误入口:http://www.usedcar.com/ashx/Admin/userOperate.ashx?p=0.5261717427056283
+错误Id:-1
+错误信息:存储区更新、插入或删除语句影响到了意外的行数(0)。实体在加载后可能被修改或删除。刷新 ObjectStateManager 项。
+堆栈追踪:   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 UsedCarDB.RepositoryImpl.Repository`1.Delete(T entity) 位置 e:\Work\ESCBZ\UsedCar\UsedCarDB\RepositoryImpl\Repository.cs:行号 112
+   在 UsedCarDAL.Admin.UserService.DelUserRole(Admin_UserInfoRole userInfoRole) 位置 e:\Work\ESCBZ\UsedCar\UsedCarDAL\Admin\UserService.cs:行号 151
+   在 UsedCarBLL.Admin.UserManager.DelUserRole(Admin_UserInfoRole userInfoRole) 位置 e:\Work\ESCBZ\UsedCar\UserdCarBLL\Admin\UserManager.cs:行号 140
+   在 UsedCarSolution.Ashx.Admin.userOperate.DelUser(HttpContext context) 位置 e:\Work\ESCBZ\UsedCar\UsedCarSolution\Ashx\Admin\userOperate.ashx.cs:行号 114
+=================================
+
+2016/1/10 22:43:30
+用户Agent信息：Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36
+客户端IP：127.0.0.1
+服务端IP：127.0.0.1
+详细信息：
+=================================
+WebService 发生错误 事件记录
+错误入口:http://www.usedcar.com/ashx/Admin/userOperate.ashx?p=0.00493410462513566
+错误Id:-1
+错误信息:存储区更新、插入或删除语句影响到了意外的行数(0)。实体在加载后可能被修改或删除。刷新 ObjectStateManager 项。
+堆栈追踪:   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 UsedCarDB.RepositoryImpl.Repository`1.Delete(T entity) 位置 e:\Work\ESCBZ\UsedCar\UsedCarDB\RepositoryImpl\Repository.cs:行号 112
+   在 UsedCarDAL.Admin.UserService.DelUserRole(Admin_UserInfoRole userInfoRole) 位置 e:\Work\ESCBZ\UsedCar\UsedCarDAL\Admin\UserService.cs:行号 151
+   在 UsedCarBLL.Admin.UserManager.DelUserRole(Admin_UserInfoRole userInfoRole) 位置 e:\Work\ESCBZ\UsedCar\UserdCarBLL\Admin\UserManager.cs:行号 140
+   在 UsedCarSolution.Ashx.Admin.userOperate.DelUser(HttpContext context) 位置 e:\Work\ESCBZ\UsedCar\UsedCarSolution\Ashx\Admin\userOperate.ashx.cs:行号 114
+=================================
+
+2016/1/10 22:50:23
+用户Agent信息：Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36
+客户端IP：127.0.0.1
+服务端IP：127.0.0.1
+详细信息：
+=================================
+WebService 发生错误 事件记录
+错误入口:http://www.usedcar.com/ashx/Admin/userOperate.ashx?p=0.24294473067857325
+错误Id:-1
+错误信息:存储区更新、插入或删除语句影响到了意外的行数(0)。实体在加载后可能被修改或删除。刷新 ObjectStateManager 项。
+堆栈追踪:   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 UsedCarDB.RepositoryImpl.Repository`1.Delete(T entity) 位置 e:\Work\ESCBZ\UsedCar\UsedCarDB\RepositoryImpl\Repository.cs:行号 112
+   在 UsedCarDAL.Admin.UserService.DelUserRole(Admin_UserInfoRole userInfoRole) 位置 e:\Work\ESCBZ\UsedCar\UsedCarDAL\Admin\UserService.cs:行号 151
+   在 UsedCarBLL.Admin.UserManager.DelUserRole(Admin_UserInfoRole userInfoRole) 位置 e:\Work\ESCBZ\UsedCar\UserdCarBLL\Admin\UserManager.cs:行号 140
+   在 UsedCarSolution.Ashx.Admin.userOperate.DelUser(HttpContext context) 位置 e:\Work\ESCBZ\UsedCar\UsedCarSolution\Ashx\Admin\userOperate.ashx.cs:行号 114
+=================================
+
